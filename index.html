@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/fav_favourite_heart_15280.ico"
+      type="image/x-icon"
+    />
+    <title>CSS Variables and js</title>
+  </head>
+  <body>
+    
+    <main>
+      <div class="controllers">
+        <h1>Photo Filters</h2>
+        <label for="">
+          Background color:
+          <input type="color" name="background" value="#1af0ec" />
+        </label>
+        <label for="">
+          Photo size:
+          <input
+            type="range"
+            name="size-picture"
+            min="20"
+            max="100"
+            value="100"
+            data-sizing="%"
+          />
+        </label>
+        <label for="">
+          Blur:
+          <input
+            type="range"
+            name="blur"
+            min="0"
+            max="6"
+            value="0"
+            data-sizing="px"
+          />
+        </label>
+        <label for="">
+          Inversion:
+          <input
+            type="range"
+            name="inversion"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+        </label>
+        <label for="">
+          Sepia:
+          <input
+            type="range"
+            name="sepia"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+        </label>
+        <label for="">
+          Saturation:
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="100"
+            value="100"
+            data-sizing="%"
+          />
+        </label>
+        <label for="">
+          Shade:
+          <input
+            type="range"
+            name="shade"
+            min="0"
+            max="360"
+            value="0"
+            data-sizing="deg"
+          />
+        </label>
+      </div>
+      <div class="picture">
+        <img src="img/IMG_6807.JPG" alt="picture" />
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
